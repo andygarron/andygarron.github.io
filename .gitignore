@@ -12,7 +12,7 @@
 /coverage
 
 # production
-/build
+# /build -- master wants to commit this!
 
 # misc
 .DS_Store
