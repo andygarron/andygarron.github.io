@@ -1,3 +1,6 @@
+# jekyll build artifacts
+/_site
+
 # dependencies
 /node_modules
 /.pnp
