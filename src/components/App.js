@@ -7,9 +7,13 @@ import styles from './App.module.styl';
 class App extends Component {
   render() {
     return (
-      <div className={styles.main}>
-        <Header />
-        <SocialMediaLink text="Github" href="https://github.com/angarron" icon={GithubIcon} />
+      <div>
+        <div className={styles.main}>
+          <Header />
+        </div>
+        <div className={styles.socialLinks}>
+          <SocialMediaLink text="Github" href="https://github.com/angarron" icon={GithubIcon} />
+        </div>
       </div>
     );
   }
