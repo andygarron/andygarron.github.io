@@ -3,18 +3,20 @@ import Header from './Header';
 import SocialMediaLink from './SocialMediaLink';
 import GithubIcon from '../icons/GithubIcon';
 import styles from './App.module.styl';
+import { MediaQueryExample } from './examples/MediaQueryExample';
 
 class App extends Component {
   render() {
     return (
-      <div>
-        <div className={styles.main}>
-          <Header />
-        </div>
-        <div className={styles.socialLinks}>
-          <SocialMediaLink text="Github" href="https://github.com/angarron" icon={GithubIcon} />
-        </div>
-      </div>
+        <MediaQueryExample/>
+      // <div>
+      //   <div className={styles.main}>
+      //     <Header />
+      //   </div>
+      //   <div className={styles.socialLinks}>
+      //     <SocialMediaLink text="Github" href="https://github.com/angarron" icon={GithubIcon} />
+      //   </div>
+      // </div>
     );
   }
 }
