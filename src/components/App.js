@@ -12,7 +12,7 @@ class App extends Component {
           <Header />
         </div>
         <div className={styles.socialLinks}>
-          <SocialMediaLink text="Github" href="https://github.com/angarron" icon={GithubIcon} />
+          <SocialMediaLink text="Github" href="https://github.com/andyg" icon={GithubIcon} />
         </div>
       </div>
     );
