@@ -1,19 +1,18 @@
 import React, {Component} from 'react';
-import Header from './Header';
-import SocialMediaLink from './SocialMediaLink';
-import GithubIcon from '../icons/GithubIcon';
-import styles from './App.module.styl';
+import DesktopApp from './DesktopApp';
+import PhoneApp from './PhoneApp';
+import {DesktopBreakpoint, PhoneBreakpoint} from '../util/Breakpoint';
 
 class App extends Component {
   render() {
     return (
       <div>
-        <div className={styles.main}>
-          <Header />
-        </div>
-        <div className={styles.socialLinks}>
-          <SocialMediaLink text="Github" href="https://github.com/andyg" icon={GithubIcon} />
-        </div>
+        <DesktopBreakpoint>
+          <DesktopApp/>
+        </DesktopBreakpoint>
+        <PhoneBreakpoint>
+          <PhoneApp/>
+        </PhoneBreakpoint>
       </div>
     );
   }
