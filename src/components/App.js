@@ -1,19 +1,18 @@
 // @flow
-import React, {Component} from 'react';
-import DesktopApp from './DesktopApp';
-import PhoneApp from './PhoneApp';
-import {DesktopBreakpoint, PhoneBreakpoint} from '../util/Breakpoint';
+import React, { Component } from "react";
+import DesktopApp from "./DesktopApp";
+import PhoneApp from "./PhoneApp";
+import { DesktopBreakpoint, PhoneBreakpoint } from "../util/Breakpoint";
 
-class App extends Component {
-
+class App extends Component<{}> {
   render() {
     return (
       <div>
         <DesktopBreakpoint>
-          <DesktopApp/>
+          <DesktopApp />
         </DesktopBreakpoint>
         <PhoneBreakpoint>
-          <PhoneApp/>
+          <PhoneApp />
         </PhoneBreakpoint>
       </div>
     );

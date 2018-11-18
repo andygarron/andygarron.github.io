@@ -1,11 +1,8 @@
-import React from 'react';
+// @flow
+import React from "react";
 
-const DesktopApp = (props) => {
-  return (
-    <div>
-      DesktopApp
-    </div>
-  );
+const DesktopApp = (props: {}) => {
+  return <div>DesktopApp</div>;
 };
 
 export default DesktopApp;
