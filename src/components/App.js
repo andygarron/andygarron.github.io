@@ -1,19 +1,28 @@
 // @flow
 import React, { Component } from "react";
-import DesktopApp from "./DesktopApp";
-import PhoneApp from "./PhoneApp";
-import { DesktopBreakpoint, PhoneBreakpoint } from "../util/Breakpoint";
+import SocialMediaLink from "./SocialMediaLink";
+//$FlowFixMe style imports lol
+import styles from "./App.module.styl";
+
+type TestType = {
+  testString: string,
+  testNum: number
+};
 
 class App extends Component<{}> {
+  testVal: TestType;
+  constructor() {
+    super();
+    this.testVal = {
+      testString: "t",
+      testNum: 2
+    };
+  }
   render() {
     return (
-      <div>
-        <DesktopBreakpoint>
-          <DesktopApp />
-        </DesktopBreakpoint>
-        <PhoneBreakpoint>
-          <PhoneApp />
-        </PhoneBreakpoint>
+      <div className={styles.main}>
+        Andy Garron
+        <SocialMediaLink text={"help"} />
       </div>
     );
   }

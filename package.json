@@ -28,7 +28,7 @@
     "not op_mini all"
   ],
   "devDependencies": {
-    "flow-bin": "^0.86.0",
+    "flow-bin": "^0.84.0",
     "react-app-rewire-stylus-modules": "0.0.2",
     "react-app-rewired": "^1.6.2"
   }
