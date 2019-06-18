@@ -1,35 +1,18 @@
 .container
-  display: flex
-  flex-direction: row
-  align-items: left
-
-.textContainer
-  display: flex
-  flex-direction: column
-
-.title
-  color: white
-  font-size: 300%
-  font-family: Roboto
-
-.body
-  color: white
-  font-family: Roboto
-
-.iconWrapper
-  color: inherit
-
-.icon
-  display: block
-  width: 64px
-  height: 64px
-  fill: firebrick
+  position: relative
+  top: 0px
+  left: 0px
 
 .staticImage
-  display: block
-  width: 64px
-  height: 64px
-  fill: green
+  position: absolute
+  width = 128px
+  height = 128px
 
 .staticImage:hover
   opacity:0
+
+.hoveredImage
+  opacity:0
+
+.hoveredImage:hover
+  opacity:1

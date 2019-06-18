@@ -1,8 +1,7 @@
 // @flow
 import React, { Component } from "react";
 // $FlowFixMe
-import styles from "./ProjectDescription.module.styl";
-import GithubIcon from "../icons/GithubIcon";
+import styles from "./HoverableImage.module.styl";
 
 type Props = {
   staticSrc: string,
@@ -11,7 +10,12 @@ type Props = {
 
 class HoverableImage extends Component<Props> {
   render() {
-    return <div className={styles.container} />;
+    return (
+      <div className={styles.container}>
+        <img className={styles.staticImage} src={this.props.staticSrc} />
+        <img className={styles.hoveredImage} src={this.props.hoverSrc} />
+      </div>
+    );
   }
 }
 
