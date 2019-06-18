@@ -1,6 +1,7 @@
 // @flow
 import React, { Component } from "react";
 import SocialMediaLink from "./SocialMediaLink";
+import ProjectDescription from "./ProjectDescription";
 import GithubIcon from "../icons/GithubIcon";
 //$FlowFixMe style imports lol
 import styles from "./App.module.styl";
@@ -23,6 +24,12 @@ class App extends Component<{}> {
     return (
       <div className={styles.main}>
         <div className={styles.headerText}>Andy Garron</div>
+        <div className={styles.projects}>
+          <ProjectDescription
+            title="Guano's Big Day"
+            body="A game about bat shit."
+          />
+        </div>
         <div className={styles.socialLinks}>
           <SocialMediaLink
             icon={GithubIcon}
