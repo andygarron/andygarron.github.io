@@ -5,11 +5,6 @@ import GithubIcon from "../icons/GithubIcon";
 import HoverableImage from "./HoverableImage";
 import styles from "./App.module.styl";
 
-type TestType = {
-  testString: string,
-  testNum: number
-};
-
 var imageSrc =
   "https://lh4.googleusercontent.com/-gZiu96oTuu4/Uag5oWLQHfI/AAAAAAAABSE/pl1W8n91hH0/w140-h165-no/Homer-Static.png";
 
@@ -17,14 +12,6 @@ var animSrc =
   "https://lh4.googleusercontent.com/i1RprwcvxhbN2TAMunNxS4RiNVT0DvlD9FNQCvPFuJ0=w140-h165-no";
 
 class App extends Component<{}> {
-  testVal: TestType;
-  constructor() {
-    super();
-    this.testVal = {
-      testString: "t",
-      testNum: 2
-    };
-  }
   render() {
     return (
       <div className={styles.main}>
