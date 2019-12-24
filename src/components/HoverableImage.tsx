@@ -1,6 +1,4 @@
-// @flow
 import React, { Component } from "react";
-// $FlowFixMe
 import styles from "./HoverableImage.module.styl";
 
 type Props = {

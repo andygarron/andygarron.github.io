@@ -1,10 +1,8 @@
-// @flow
 import React, { Component } from "react";
 import SocialMediaLink from "./SocialMediaLink";
 import ProjectDescription from "./ProjectDescription";
 import GithubIcon from "../icons/GithubIcon";
 import HoverableImage from "./HoverableImage";
-//$FlowFixMe style imports lol
 import styles from "./App.module.styl";
 
 type TestType = {

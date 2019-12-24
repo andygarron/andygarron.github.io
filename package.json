@@ -4,11 +4,16 @@
   "private": true,
   "homepage": "https://andygarron.github.io",
   "dependencies": {
+    "@types/jest": "^24.0.24",
+    "@types/node": "^13.1.0",
+    "@types/react": "^16.9.17",
+    "@types/react-dom": "^16.9.4",
     "gh-pages": "^2.0.1",
     "react": "^16.6.0",
     "react-dom": "^16.6.0",
     "react-responsive": "^6.0.1",
-    "react-scripts": "2.1.1"
+    "react-scripts": "2.1.1",
+    "typescript": "^3.7.4"
   },
   "scripts": {
     "start": "react-app-rewired start",
@@ -28,7 +33,6 @@
     "not op_mini all"
   ],
   "devDependencies": {
-    "flow-bin": "^0.84.0",
     "react-app-rewire-stylus-modules": "0.0.2",
     "react-app-rewired": "^1.6.2"
   }

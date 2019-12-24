@@ -1,6 +1,4 @@
-// @flow
 import React, { Component } from "react";
-// $FlowFixMe
 import styles from "./ProjectDescription.module.styl";
 import GithubIcon from "../icons/GithubIcon";
 
