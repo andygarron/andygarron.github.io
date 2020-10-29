@@ -20,19 +20,19 @@ function Breakpoint(props: Props) {
  );
 }
 
-export function DesktopBreakpoint(props: Props) {
+export function DesktopBreakpoint(children: object) {
   console.log(Breakpoints.Desktop);
   return (
     <Breakpoint breakpoint={Breakpoints.Desktop}>
-      {props.children}
+      {children}
     </Breakpoint>
   );
 }
 
-export function PhoneBreakpoint(props: Props) {
+export function PhoneBreakpoint(children: object) {
   return (
     <Breakpoint breakpoint={Breakpoints.Phone}>
-      {props.children}
+      {children}
     </Breakpoint>
   );
 }

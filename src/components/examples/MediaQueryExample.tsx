@@ -1,6 +1,6 @@
 
 import React from 'react';
-import {DesktopBreakpoint, PhoneBreakpoint, TabletBreakpoint} from '../../util/Breakpoint';
+import {DesktopBreakpoint, PhoneBreakpoint} from '../../util/Breakpoint';
 
 export const MediaQueryExample = () => (
   <div>
@@ -9,11 +9,6 @@ export const MediaQueryExample = () => (
         this is a desktop
       </div>
     </DesktopBreakpoint>
-    <TabletBreakpoint>
-      <div>
-        this is a tablet
-      </div>
-    </TabletBreakpoint>
     <PhoneBreakpoint>
       <div>
         this is a phone
